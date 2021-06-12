@@ -1,0 +1,30 @@
+{% extends 'blogpage/base.html' %}
+
+{% block content %}
+    <article>
+        <div class="box">
+            <p>
+                <strong>{{ post.title }}</strong> <small>{{ post.date_added|date:"d M, Y h:i" }}</small> <a
+                    href="{% url 'category' post.category.id %}">{{ post.category.title }}</a>
+                <br>
+                {{ post.body }}
+            </p>
+            <h2>Comments</h2>
+
+            {% if not post.comments.all %}
+                <p>No comments yet</p>
+            {% endif %}
+
+            {% for comment in post.comments.all %}
+                <article style="border: 1px solid gainsboro;border-radius: 5px;padding:5px;margin-bottom: 10px">
+                    <strong>{{ comment.name }} </strong><span class="icon" style="color: #b5b5b5"><i
+                        class="far fa-clock"></i></span>
+                    <small>{{ comment.date_added }}</small><br>
+                    {{ comment.body }}
+                </article>
+            {% endfor %}
+
+            {% include 'blogpage/forms/bulma_form.html' %}
+        </div>
+    </article>
+{% endblock content %}

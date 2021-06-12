@@ -1,0 +1,14 @@
+{% extends 'blogpage/base.html' %}
+{% block content %}
+    <h1 style="text-align: center;margin-top: 20px;margin-bottom: 20px;
+    border-radius: 12px;padding-bottom: 6px; background-color: white">{{ category.title }}</h1>
+    {% for post in category.posts.all %}
+        <div class="box">
+            <p>
+                <strong>{{ post.title }}</strong> <small>{{ post.date_added|date:"d M, Y h:i" }}</small>
+                <br>
+                {{ post.intro }} <a href="{% url 'detail' post.id %}">Read more</a>
+            </p>
+        </div>
+    {% endfor %}
+{% endblock content %}
