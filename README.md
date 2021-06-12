@@ -1,5 +1,5 @@
 # Blogpage
-Un sencillo blog hecho Django y bulma. 
+Un sencillo blog hecho con Django y bulma. 
 
 ### Algunas características principales: 
 - Visualizar publicaciones
