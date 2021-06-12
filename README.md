@@ -9,6 +9,12 @@ Un sencillo blog hecho Django y bulma.
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/71096926/121788275-a393c900-cb91-11eb-90db-ad958af5bf5e.png)
+
+![image](https://user-images.githubusercontent.com/71096926/121788278-ae4e5e00-cb91-11eb-9c13-90b1323852b1.png)
+
+![image](https://user-images.githubusercontent.com/71096926/121788287-b73f2f80-cb91-11eb-901e-60cb20f7f745.png)
+
 ## Guía rápida
 
 Estas instrucciones te proporcionarán una copia del proyecto en funcionamiento en tu máquina local con fines de desarrollo y prueba.
